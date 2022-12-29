@@ -47,9 +47,8 @@
 	letter-spacing: 0;
 }
 
-#header { background-color: #F9F9F9; }
-
-#header-wrap { background-color: #FFF; }
+#header { background-color: #17273f; }
+#header-wrap { background-color: #f9f9f9; }
 
 
 .device-md .primary-menu i.icon-angle-down,
