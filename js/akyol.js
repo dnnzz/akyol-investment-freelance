@@ -1,7 +1,7 @@
 $(document).ready(function () {
   (function(){
     // language detection
-    //console.log(navigator.languages[0])
+    console.log(navigator.languages)
     emailjs.init("oSJriUzaRK6SyLi-7");
   })();
 
