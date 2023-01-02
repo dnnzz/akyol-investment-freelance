@@ -13,7 +13,7 @@ $(document).ready(function () {
     $(".hidden").removeClass("hidden");
   });
 
-  $(".close-button").on("click", function () {
+  $(".close-button").on("click", function (e) {
     e.preventDefault();
     e.stopPropagation();
     $("#form-page").fadeOut(700);
@@ -24,6 +24,26 @@ $(document).ready(function () {
     $.magnificPopup.close();
     return false;
   })
+
+  $(".page-submit-btn").on("click", function (e) {
+    const formParams = {
+      from_name: $("#quick-contact-form-name").val(),
+      name: $("#quick-contact-form-name").val(),
+      surname: $("#quick-contact-form-surname").val(),
+      email: $("#quick-contact-form-email").val(),
+      phone: $("#quick-contact-form-phone").val(),
+      reply_to: "info@akyolinvestment.com",
+    };
+    emailjs.send("service_1cjewgc","template_68teftd",formParams)
+    .then(function(response) {
+      console.log(response);
+   }, function(error) {
+      alert("Error !",error);
+   });
+   setTimeout(() => {
+    $(".trigger").trigger("click");
+    }, 1000);
+  });
 
   $(".submit-btn").on('click',() => {
     const formParams = {
