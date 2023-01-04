@@ -100,7 +100,7 @@
           <div class="form-btn">
             <a
               href="#"
-              class="button button-large button-circle button-black m-0"
+              class="button button-large button-circle button-amber m-0"
             >
               Sizi Arayalım!</a
             >
@@ -118,51 +118,47 @@
                   <div class="row mb-4">
                     <div class="col">
                       <div class="form-outline">
-                        <input
-                          type="text"
-                          id="firstName"
-                          class="form-control"
-                        />
-                        <label class="form-label text-white" for="firstName"
-                          >Ad</label
-                        >
+                        <label class="form-label text-white" for="firstName">Ad</label>
+                        <input type="text"id="firstName"class="form-control"/>
+                        
                       </div>
                     </div>
                     <div class="col">
                       <div class="form-outline">
+                        <label class="form-label text-white" for="lastName">Soyad</label >
                         <input
                           type="text"
                           id="lastName"
                           class="form-control"
                         />
-                        <label class="form-label text-white" for="lastName"
-                          >Soyad</label
-                        >
+                        
                       </div>
                     </div>
                   </div>
                   <!-- Email input -->
                   <div class="form-outline mb-4">
+                    <label class="form-label text-white" for="email">Email</label>
                     <input
                       type="email"
                       id="email"
                       class="form-control"
                     />
-                    <label class="form-label text-white" for="email">Email</label>
+                    
                   </div>
 
                   <!-- Number input -->
                   <div class="form-outline mb-4">
+                    <label class="form-label text-white" for="phone">Telefon</label>
                     <input
                       type="phone"
                       id="phone"
                       class="form-control"
                     />
-                    <label class="form-label text-white" for="phone">Telefon</label>
+                    
                   </div>
                   <!-- Submit button -->
                   <button type="button" class="btn btn-secondary btn-block mb-4 submit-btn">
-                    Yolla
+                    Gönder
                   </button>
                   <a href="#successModal" data-lightbox="inline" class="d-none trigger">Trigger</a>
                 </form>
@@ -184,9 +180,9 @@
             <!-- Logo
 					============================================= -->
             <div id="logo" class="ms-auto ms-lg-0 me-lg-auto">
-              <a href="/" class="standard-logo"
-                ><img  class="lozad" src="./images/logo.png" alt="Akyol Investment Logo"
-              /></a>
+              <a href="/" class="standard-logo">
+                <img  class="lozad" src="./images/logo.png" alt="Akyol Investment Logo"
+              />
               <a href="/" class="retina-logo"
                 ><img class="lozad" src="./images/logo@2x.png" alt="Akyol Investment Mobile Logo"
               /></a>
@@ -196,10 +192,21 @@
             <div class="header-misc d-none d-lg-flex">
               <ul class="header-extras">
                 <li>
+                  <a href="#top-bar" class="button text-white">Ana Sayfa</a>
+                </li>
+                
+                <li>
+                  <a href="#projects" class="button text-white">Galeri</a>
+                </li>
+                
+                <li>
+                  <a href="#contact" class="button text-white">İletişim</a>
+                </li>
+                <li>
                   <i style="color:white;"class="i-plain icon-call m-0"></i>
                   <div style="color:white;" class="he-text">
                     Bizi Arayın
-                    <span style="color:white;">+905460000000</span>
+                    <span style="color:white;">+90 850 888 68 98</span>
                   </div>
                 </li>
                 <li>
@@ -238,25 +245,28 @@
 						============================================= -->
               <nav class="primary-menu with-arrows">
                 <ul class="menu-container">
-                  <li class="menu-item current">
+                  <li class="menu-item current d-lg-none">
+                    <a class="menu-link" href="#top-bar"
+                      ><div>Ana Sayfa</div></a
+                    >
+                  </li>
+                  <li class="menu-item  d-lg-none">
+                    <a class="menu-link" href="#contact"
+                      ><div>İletişim</div></a
+                    >
+                  </li>
+                  <li class="menu-item d-lg-none">
                     <a class="menu-link" href="#projects"
+                      ><div>Galeri</div></a
+                    >
+                  </li>
+                  <li class="menu-item current d-md-none d-lg-block">
+                    <a class="menu-link" href="#project-details"
                       ><div>Projeler</div></a
                     >
                   </li>
                 </ul>
               </nav>
-              <!-- #primary-menu end -->
-
-              <form class="top-search-form" action="search.html" method="get">
-                <input
-                  type="text"
-                  name="q"
-                  class="form-control"
-                  value=""
-                  placeholder="Type &amp; Hit Enter.."
-                  autocomplete="off"
-                />
-              </form>
             </div>
           </div>
         </div>
@@ -357,8 +367,78 @@
 		============================================= -->
       <section id="content">
         <div class="content-wrap">
+          <div class="container clearfix">
+            <article class="portfolio-item col-12 pf-icons pf-illustrations">
+							<div class="grid-inner row g-0">
+								<div class="col-lg-8">
+                  <div class="portfolio-image">
+                    <img class="lozad" src="./images/projects/1.webp" alt="The Atmosphere" />
+                    <div class="bg-overlay" data-lightbox="gallery">
+                      <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+                        <a href="images/projects/2.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                        <a href="images/projects/3.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                        <a href="images/projects/4.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                      </div>
+                      <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+                    </div>
+                  </div>  
+								</div>
+								<div class="portfolio-desc col-lg-4 p-4 px-lg-5">
+									<h3>Beyond All</h3>
+									<p class="mt-3 d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quaerat beatae nulla debitis vitae temporibus enim sed. Optio, reprehenderit, ex.</p>
+								</div>
+							</div>
+						</article>
+            <article class="portfolio-item col-12 pf-icons pf-illustrations mt-2">
+							<div class="grid-inner row g-0">
+                <div class="portfolio-desc col-lg-4 p-4 px-lg-5">
+									<h3>Allure</h3>
+									<p class="mt-3 d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quaerat beatae nulla debitis vitae temporibus enim sed. Optio, reprehenderit, ex.</p>
+								</div>
+								<div class="col-lg-8">
+                  <div class="portfolio-image">
+                    <img
+                      class="lozad"
+                      src="./images/projects/7.jpg"
+                      alt="Corporate Headquarters"
+                    />
+                    <div class="bg-overlay" data-lightbox="gallery">
+                      <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+                        <a href="images/projects/8.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                        <a href="images/projects/5A.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                        <a href="images/projects/12A.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                      </div>
+                      <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+                    </div>
+                  </div>
+								</div>
+							</div>
+						</article>
+            <article class="portfolio-item col-12 pf-icons pf-illustrations mt-2">
+							<div class="grid-inner row g-0">
+								<div class="col-lg-8">
+                  <div class="portfolio-image">
+                    <img class="lozad" src="./images/projects/5.jpg" alt="Lakeview Center" />
+                    <div class="bg-overlay" data-lightbox="gallery">
+                      <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
+                        <a href="images/projects/6.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
+                        <a href="images/projects/9L.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                        <a href="images/projects/10L.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                        <a href="images/projects/13L.jpg" class="d-none" data-lightbox="gallery-item"></a>
+                      </div>
+                      <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
+                    </div>
+                  </div>
+								</div>
+								<div class="portfolio-desc col-lg-4 p-4 px-lg-5">
+									<h3>La Bella</h3>
+									<p class="mt-3 d-none d-sm-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, quaerat beatae nulla debitis vitae temporibus enim sed. Optio, reprehenderit, ex.</p>
+								</div>
+							</div>
+						</article>
+          </div>
           <div
-            class="promo promo-light promo-full promo-uppercase p-5 bottommargin-lg header-stick"
+            class="promo promo-light promo-full promo-uppercase p-5 bottommargin-lg"
           >
             <div class="container clearfix">
               <div class="row align-items-center">
@@ -367,13 +447,13 @@
                     Prestİjlİ İnşaat projelerİmİzden sİze uygun olanı seçmek İçİn geç kalmayın
                   </h3>
                   <span
-                    >Türkiye’nin büyüyen yatırım şehirlerinden olan Antalya’da emlak yatırımı yapmak için bizimle hemen iletişime geçin!</span
+                    >Türkİye’nİn büyüyen yatırım şehİrlerİnden olan Antalya’da emlak yatırımı yapmak İçİn bİzİmle hemen İletİşİme geçİn!</span
                   >
                 </div>
                 <div class="col-12 col-lg-auto mt-4 mt-lg-0">
                   <a
                     href="#projects"
-                    class="button button-large button-circle button-black m-0"
+                    class="button button-large button-circle button-amber m-0"
                     >Hemen İncele</a
                   >
                 </div>
@@ -381,7 +461,7 @@
             </div>
           </div>
 
-          <div class="container clearfix">
+          <div id="project-details" class="container clearfix">
             <div class="row justify-content-center col-mb-50">
               <div class="col-sm-6 col-lg-4">
                 <div class="feature-box media-box">
@@ -487,127 +567,23 @@
               <div class="video-overlay akyol-banner"></div>
             </div>
           </div>  
-          <div class="section mb-0 mt-0">
-            <h2 class="center mb-0 ls1">Projelerimiz:</h2>
-          </div>
-
-          <div id="projects" class="portfolio row grid-container g-0">
-            <article
-              class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 m-lg-5 pf-media pf-icons"
-            >
-              <div class="grid-inner">
-                <div class="portfolio-image">
-                  <img class="lozad" src="./images/projects/1.webp" alt="The Atmosphere" />
-                  <div class="bg-overlay">
-                    <div
-                      class="bg-overlay-content dark"
-                      data-hover-animate="fadeIn"
-                    >
-                    </div>
-                    <div
-                      class="bg-overlay-bg dark"
-                      data-hover-animate="fadeIn"
-                    ></div>
-                  </div>
-                </div>
-                <div class="portfolio-desc">
-                  <h3><a href="#">Beyond All</a></h3>
-                  <span>Mayıs 2024'te Teslim</span>
-                </div>
-              </div>
-            </article>
-            <article
-              class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-6 offset-lg-1 mt-lg-5 pf-uielements pf-media"
-            >
-              <div class="grid-inner">
-                <div class="portfolio-image">
-                  <img
-                    class="lozad"
-                    src="./images/projects/7.jpg"
-                    alt="Corporate Headquarters"
-                  />
-                  <div class="bg-overlay">
-                    <div
-                      class="bg-overlay-content dark"
-                      data-hover-animate="fadeIn"
-                    >
-                    </div>
-                    <div
-                      class="bg-overlay-bg dark"
-                      data-hover-animate="fadeIn"
-                    ></div>
-                  </div>
-                </div>
-                <div class="portfolio-desc">
-                  <h3>Allure</h3>
-                  <span>Mayıs 2023'te Teslim</span>
-                </div>
-              </div>
-            </article>
-            <article class="portfolio-item col-6 col-md-4 col-lg-3 pf-icons pf-illustrations">
-              <div class="grid-inner">
-                <div class="portfolio-image">
-                  <a href="portfolio-single.html">
-                    <img src="images/projects/7.jpg" alt="Open Imagination">
-                  </a>
-                  <div class="bg-overlay" data-lightbox="gallery">
-                    <div class="bg-overlay-content dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item">
-                      <a href="images/projects/5.jpg" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item" data-lightbox="gallery-item"><i class="icon-line-stack-2"></i></a>
-                      <a href="images/projects/6.jpg" class="d-none" data-lightbox="gallery-item"></a>
-                      <a href="portfolio-single.html" class="overlay-trigger-icon bg-light text-dark" data-hover-animate="fadeInDownSmall" data-hover-animate-out="fadeOutUpSmall" data-hover-speed="350" data-hover-parent=".portfolio-item"><i class="icon-line-ellipsis"></i></a>
-                    </div>
-                    <div class="bg-overlay-bg dark" data-hover-animate="fadeIn" data-hover-parent=".portfolio-item"></div>
-                  </div>
-                </div>
-                <div class="portfolio-desc">
-                  <h3><a href="portfolio-single-gallery.html">Morning Dew</a></h3>
-                  <span><a href="#">Icons</a>, <a href="#">Illustrations</a></span>
-                </div>
-              </div>
-            </article>
-            <article
-              class="portfolio-item col-12 col-sm-6 col-md-4 col-lg-3 m-lg-5 pf-graphics"
-            >
-              <div class="grid-inner">
-                <div class="portfolio-image">
-                  <img class="lozad" src="./images/projects/5.jpg" alt="Lakeview Center" />
-                  <div class="bg-overlay">
-                    <div
-                      class="bg-overlay-content dark"
-                      data-hover-animate="fadeIn"
-                    >
-                    </div>
-                    <div
-                      class="bg-overlay-bg dark"
-                      data-hover-animate="fadeIn"
-                    ></div>
-                  </div>
-                </div>
-                <div class="portfolio-desc">
-                  <h3>La Bella</h3>
-                  <span>Aralık 2023'te Teslim</span>
-                </div>
-              </div>
-            </article>
-          </div>
-
           <a
-            href="#"
+            id="page-form-cta"
             class="button button-3d border-bottom-0 button-full center text-end bottommargin-lg fw-light font-primary"
             style="font-size: 26px"
           >
             <div class="container clearfix">
               Hayalinizdeki yatırım fırsatını kaçırmayın !
-              <strong>Bize Ulaşın</strong>
+              <strong>Hemen İletişim Formunu Doldurun!</strong>
               <i class="icon-angle-right" style="top: 3px"></i>
             </div>
           </a>
-          <div style="margin-bottom:0!important;" class="section bg-transparent mt-0 p-0 footer-stick">
+          <div id="contact" style="margin-bottom:0!important;" class="section bg-transparent mt-0 p-0 footer-stick">
             <div class="container clearfix">
               <div class="row">
                 <div class="col-lg-6">
                   <div class="widget quick-contact-widget form-widget clearfix">
-                    <h4>Hızlı İletişim Formu</h4>
+                    <h4>Hızlı İletİşİm Formu</h4>
                     <div class="form-result"></div>
                     <form id="quick-contact-form" name="quick-contact-form" class="quick-contact-form mb-0">
                       <div class="form-process">
@@ -617,16 +593,16 @@
                       </div>
                       <input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Ad" />
                       <input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-surname" name="quick-contact-form-name" value="" placeholder="Soyad" />
-                      <input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email" />
+                      <input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Emaİl" />
                       <input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-phone" name="quick-contact-form-name" value="" placeholder="Telefon" />
                       <input type="hidden" name="prefix" value="quick-contact-form-">
-                      <button type="button" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-3d m-0 page-submit-btn">Formu Yolla</button>
+                      <button type="button" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-3d m-0 page-submit-btn">Formu Gönder</button>
                     </form>
                   </div>
                 </div>
                 <div class="col-lg-5 offset-md-1 topmargin-sm">
                   <div class="heading-block border-bottom-0">
-                    <h2>Sosyal Medya Hesapları</h2>
+                    <h2>İletişim</h2>
                   </div>
 
                   <ul class="iconlist iconlist-large iconlist-color">
@@ -639,6 +615,9 @@
                     </li>
                     <li>
                       <i class="icon-map"></i> Adres
+                    </li>
+                    <li>
+                      <i class="icon-phone"></i> Telefon : +90 850 888 68 98
                     </li>
                   </ul>
                 </div>

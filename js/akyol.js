@@ -1,7 +1,10 @@
 $(document).ready(function () {
   (function(){
     // language detection
-    console.log(navigator.languages)
+    //console.log(navigator.languages)
+    if(window.location.href.includes('utm')){
+      window.sessionStorage.setItem('utm',window.location.href.split("?")[1].split("&").join(","));
+    }
     emailjs.init("oSJriUzaRK6SyLi-7");
   })();
 
@@ -25,13 +28,20 @@ $(document).ready(function () {
     return false;
   })
 
-  $(".page-submit-btn").on("click", function (e) {
+  $("#page-form-cta").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $("#form-page").fadeIn(700);
+    $(".hidden").removeClass("hidden");
+  });
+
+  $(".page-submit-btn").on("mousedown touchstart", function (e) {
     const formParams = {
       from_name: $("#quick-contact-form-name").val(),
       name: $("#quick-contact-form-name").val(),
       surname: $("#quick-contact-form-surname").val(),
       email: $("#quick-contact-form-email").val(),
-      phone: $("#quick-contact-form-phone").val(),
+      phone: `${$('#quick-contact-form-phone').val()} , UTM :  ${window.sessionStorage.getItem('utm') ? window.sessionStorage.getItem('utm') : 'no-utm'}`,
       reply_to: "info@akyolinvestment.com",
     };
     emailjs.send("service_1cjewgc","template_68teftd",formParams)
@@ -51,7 +61,7 @@ $(document).ready(function () {
       name: $("#firstName").val(),
       surname: $("#lastName").val(),
       email: $("#email").val(),
-      phone: $("#phone").val(),
+      phone: `${$('#phone').val()} , UTM :  ${window.sessionStorage.getItem('utm') ? window.sessionStorage.getItem('utm') : 'no-utm'}`,
       reply_to: "info@akyolinvestment.com",
     };
     emailjs.send("service_1cjewgc","template_68teftd",formParams)
